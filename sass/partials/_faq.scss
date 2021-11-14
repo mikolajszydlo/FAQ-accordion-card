@@ -1,0 +1,40 @@
+.faq {
+  background-color: #fff;
+  border-radius: 24px;
+
+  li {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid $color-light-blue;
+
+    .question {
+      .clickable-elem {
+        object-fit: none;
+        cursor: pointer;
+      }
+    }
+
+    .answer {
+      display: none;
+      padding-top: 19px;
+    }
+
+    &.active {
+      .question {
+        h2 {
+          font-weight: $font-bold;
+        }
+
+        img {
+          transform: rotate(180deg);
+        }
+      }
+
+      .answer {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+

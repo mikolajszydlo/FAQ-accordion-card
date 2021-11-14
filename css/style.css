@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* Variables */
+/* Fonts */
+/* Backgrounbd gradient */
+/* Text Colors */
+/* Dividers color */
+/* Global */
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(0deg, #6565e7 0%, #af67e9 100%);
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 40px;
+  width: 87.2%;
+}
+
+.container-narrow {
+  margin: 132px auto 0 auto;
+  width: 85.32%;
+}
+
+.faq {
+  position: relative;
+}
+
+.faq .logo {
+  position: absolute;
+  height: 180px;
+  top: -108px;
+  right: 45px;
+}
+
+.faq .logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+}
+
+.faq .logo::after {
+  position: absolute;
+  content: '';
+  width: 240px;
+  height: 100%;
+  top: 110%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  background-image: url("../../images//bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.faq .questions-list {
+  padding-bottom: 48px;
+}
+
+.faq .questions-list h1 {
+  padding-bottom: 29px;
+}
+
+.faq .questions-list .question {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: center;
+}
+
+.question {
+  color: #4a4b5e;
+}
+
+.question h2 {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.answer {
+  color: #787887;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.faq {
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.faq li {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.faq li .question .clickable-elem {
+  -o-object-fit: none;
+     object-fit: none;
+  cursor: pointer;
+}
+
+.faq li .answer {
+  display: none;
+  padding-top: 19px;
+}
+
+.faq li.active .question h2 {
+  font-weight: 700;
+}
+
+.faq li.active .question img {
+  transform: rotate(180deg);
+}
+
+.faq li.active .answer {
+  display: inline-block;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvcGFydGlhbHMvX3NldHRpbmdzLnNjc3MiLCIuLi9zYXNzL3BhcnRpYWxzL19nbG9iYWwuc2NzcyIsInN0eWxlLmNzcyIsIi4uL3Nhc3MvcGFydGlhbHMvX2xheW91dC5zY3NzIiwiLi4vc2Fzcy9wYXJ0aWFscy9fdHlwb2dyYXBoeS5zY3NzIiwiLi4vc2Fzcy9wYXJ0aWFscy9fZmFxLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsNEZBQVk7QUFFWixjQUFBO0FBQ0EsVUFBQTtBQUtBLHlCQUFBO0FBSUEsZ0JBQUE7QUFNQSxtQkFBQTtBQ2xCQSxXQUFBO0FBQ0E7RUFDRSxzQkFBc0I7RUFDdEIsU0FBUztFQUNULFVBQVU7QUNPWjs7QURKQTtFQUNFLDJEQUErRTtBQ09qRjs7QURKQTtFQUNFLGdCQUFnQjtBQ09sQjs7QURKQTtFQUNFLFNBQVM7QUNPWDs7QUNsQkE7RUFDRSxhQUFhO0VBTGIsYUFBYTtFQUNiLHVCQUF1QjtFQU12QixtQkFBbUI7QURzQnJCOztBQ25CQTtFQUNFLGdCQUFnQjtFQUNoQixZQUFZO0FEc0JkOztBQ25CQTtFQUNFLHlCQUF5QjtFQUN6QixhQUFhO0FEc0JmOztBQ25CQTtFQUNFLGtCQUFrQjtBRHNCcEI7O0FDdkJBO0VBS0ksa0JBQWtCO0VBQ2xCLGFBQWE7RUFDYixXQUFXO0VBQ1gsV0FBVztBRHNCZjs7QUM5QkE7RUFXTSxzQkFBbUI7S0FBbkIsbUJBQW1CO0VBQ25CLGtCQUFrQjtBRHVCeEI7O0FDbkNBO0VBZ0JNLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLFlBQVk7RUFDWixTQUFTO0VBQ1QsU0FBUztFQUNULGdDQUFnQztFQUNoQyw0REFBNEQ7RUFDNUQsNEJBQTRCO0FEdUJsQzs7QUMvQ0E7RUE0Qkksb0JBQW9CO0FEdUJ4Qjs7QUNuREE7RUErQk0sb0JBQW9CO0FEd0IxQjs7QUN2REE7RUFtQ00sYUFBYTtFQUNiLDhCQUE4QjtBRHdCcEM7O0FFakZBO0VBQ0UsZUFBZTtFQUNmLHFDSkVrQztBRWtGcEM7O0FFakZBO0VBQ0UsZUFBZTtFQUNmLGdCSkRhO0VJRWIsaUJBQWlCO0VBQ2pCLGtCQUFrQjtBRm9GcEI7O0FFakZBO0VBQ0UsY0pFa0M7QUVrRnBDOztBRXJGQTtFQUlJLGdCSlhhO0VJWWIsZUFBZTtBRnFGbkI7O0FFakZBO0VBQ0UsY0pOb0M7RUlPcEMsZ0JKbEJlO0VJbUJmLGNBQWM7QUZvRmhCOztBRzVHQTtFQUNFLHNCQUFzQjtFQUN0QixtQkFBbUI7QUgrR3JCOztBR2pIQTtFQUtJLGlCQUFpQjtFQUNqQixvQkFBb0I7RUFDcEIsZ0NMWWdDO0FFb0dwQzs7QUd2SEE7RUFXUSxtQkFBZ0I7S0FBaEIsZ0JBQWdCO0VBQ2hCLGVBQWU7QUhnSHZCOztBRzVIQTtFQWlCTSxhQUFhO0VBQ2IsaUJBQWlCO0FIK0d2Qjs7QUdqSUE7RUF3QlUsZ0JMbEJLO0FFK0hmOztBR3JJQTtFQTRCVSx5QkFBeUI7QUg2R25DOztBR3pJQTtFQWlDUSxxQkFBcUI7QUg0RzdCIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

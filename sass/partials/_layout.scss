@@ -1,0 +1,67 @@
+@mixin flex-horiz {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  height: 100vh;
+  @include flex-horiz;
+  align-items: center;
+}
+
+.container {
+  margin-top: 40px;
+  width: 87.2%;
+}
+
+.container-narrow {
+  margin: 132px auto 0 auto;
+  width: 85.32%;
+}
+
+.faq {
+  position: relative;
+  // height: 535px;
+
+  .logo {
+    position: absolute;
+    height: 180px;
+    top: -108px;
+    right: 45px;
+
+    img {
+      object-fit: contain;
+      position: relative;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 240px;
+      height: 100%;
+      top: 110%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      background-image: url('../../images//bg-pattern-mobile.svg');
+      background-repeat: no-repeat;
+    }
+  }
+  .questions-list {
+    padding-bottom: 48px;
+
+    h1 {
+      padding-bottom: 29px;
+    }
+
+    .question {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+
+
+
+
+

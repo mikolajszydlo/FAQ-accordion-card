@@ -1,0 +1,26 @@
+body {
+  font-size: 12px;
+  font-family: $font-text;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: $font-bold;
+  line-height: 100%;
+  text-align: center;
+}
+
+.question {
+  color: $color-dark-blue;
+
+  h2 {
+    font-weight: $font-normal;
+    font-size: 13px;
+  }
+}
+
+.answer {
+  color: $color-grayish-blue;
+  font-weight: $font-normal;
+  line-height: 2;
+}

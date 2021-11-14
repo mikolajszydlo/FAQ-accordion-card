@@ -1,0 +1,18 @@
+/* Global */
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(0deg, $color-soft-blue 0%, $color-soft-violet 100%);
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
