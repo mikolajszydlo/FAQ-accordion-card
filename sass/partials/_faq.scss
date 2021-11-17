@@ -8,7 +8,7 @@
     border-bottom: 1px solid $color-light-blue;
 
     .question {
-      .clickable-elem {
+      .arrow-elem {
         object-fit: none;
         cursor: pointer;
       }
@@ -33,6 +33,17 @@
       .answer {
         display: inline-block;
       }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .faq {
+    .logo {
+      background-size: contain, 900px 900px;
+      background-repeat: no-repeat;
+      background-image: url('../../images/illustration-woman-online-desktop.svg'), url('../../images/bg-pattern-desktop.svg');
+      background-position: -85px 0, -535px -345px;
     }
   }
 }

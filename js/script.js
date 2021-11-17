@@ -24,8 +24,8 @@ class Question{
   generateHTML(element){
     return (
       `<div class="question">
-        <h2>${element.question}</h2>
-        <img class="clickable-elem" src="./images/icon-arrow-down.svg">
+        <h2 class="clickable-elem">${element.question}</h2>
+        <img class="arrow-elem" src="./images/icon-arrow-down.svg">
       </div>
       <p class="answer">${element.answer}</p>`
     );
