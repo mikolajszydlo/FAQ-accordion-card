@@ -23,8 +23,8 @@ class Question{
 
   generateHTML(element){
     return (
-      `<div class="question">
-        <h2 class="clickable-elem">${element.question}</h2>
+      `<div class="question clickable-elem">
+        <h2>${element.question}</h2>
         <img class="arrow-elem" src="./images/icon-arrow-down.svg">
       </div>
       <p class="answer">${element.answer}</p>`
@@ -33,20 +33,21 @@ class Question{
 
   initAccordion(){
     const thisQuestion = this;
-    const accordionTriger = thisQuestion.elementDOM.querySelector(selector.clickableElement);
+    const accordionTriger = thisQuestion.elementDOM.querySelectorAll(selector.clickableElement);
 
-    accordionTriger.addEventListener('click', function(event){
-      event.preventDefault();
+    for(const elem of accordionTriger){
+      elem.addEventListener('click', function(event){
+        event.preventDefault();
 
-      const activeItem = document.querySelector(selector.active);
+        const activeItem = document.querySelector(selector.active);
 
-      if(activeItem && activeItem != thisQuestion.elementDOM){
-        activeItem.classList.remove(classNames.active);
-      }
+        if(activeItem && activeItem != thisQuestion.elementDOM){
+          activeItem.classList.remove(classNames.active);
+        }
 
-      thisQuestion.elementDOM.classList.toggle(classNames.active);
-    });
-
+        thisQuestion.elementDOM.classList.toggle(classNames.active);
+      });
+    }
   }
 
 }

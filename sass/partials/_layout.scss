@@ -4,6 +4,12 @@ main {
   justify-content: center;
 }
 
+section {
+  [class*="desktop"] {
+    display: none;
+  }
+}
+
 .container {
   margin-top: calc(min(39.47%, 148px));
   width: 87.2%;
@@ -38,15 +44,10 @@ main {
       left: 50%;
       transform: translateX(calc(-50% - 8px));
     }
-
-    .mail-box {
-      display: none;
-    }
   }
 
   .questions-list {
     padding-bottom: 48px;
-
     h1 {
       padding-bottom: 29px;
     }
@@ -58,7 +59,19 @@ main {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1225px) {
+  section {
+    position: relative;
+
+    .mail-box-desktop {
+      display: block;
+      position: absolute;
+      top: 194px;
+      left: -93px;
+      z-index: 3;
+    }
+  }
+
   .container {
     margin-top: calc(min(8.96%, 129px));
     width: 63.889%;
@@ -66,28 +79,43 @@ main {
 
   .container-narrow {
     width: 48.15%;
-    margin: 65px auto 0 0;
+    margin: 0 auto 0 0;
   }
 
   .faq {
-    height: min-content;
+    height: 509px;
+
     .logo {
       height: auto;
+      overflow: hidden;
+
       .logo-image, .logo-pattern {
         display: none;
       }
 
-      .mail-box {
-        display: block;
+      [class*="desktop"] {
+        display: inline-block;
+      }
+
+      .logo-image-desktop {
         position: absolute;
-        top: 28%;
-        left: -22%;
+        top: 65px;
+        left: -85px;
+        z-index: 2;
+      }
+
+      .logo-pattern-desktop {
+        position: absolute;
+        top: -295px;
+        left: -575px;
       }
     }
 
     .questions-list {
       width: 38.04%;
+      margin-top: 65px;
       margin-right: 95px;
+      padding-bottom: auto;
 
       .arrow-elem {
         padding-right: 15px;
