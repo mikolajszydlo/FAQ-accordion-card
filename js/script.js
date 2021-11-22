@@ -25,7 +25,7 @@ class Question{
     return (
       `<div class="question clickable-elem">
         <h2>${element.question}</h2>
-        <img class="arrow-elem" src="./images/icon-arrow-down.svg">
+        <img class="arrow-elem" src="./images/icon-arrow-down.svg" alt="Arrow indicator">
       </div>
       <p class="answer">${element.answer}</p>`
     );
